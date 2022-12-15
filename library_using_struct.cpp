@@ -1,35 +1,50 @@
 #include<iostream>
-using namespace std;
-struct labrary
+//#include<conio.h>
+using namespace std; 
+struct Book
 {
-	string name;
-	int price;
-	int page;
-};
-struct second_labrary
-{
-	string name;
-	int price;
-	int page;
+    int Book_id;
+    char Book_name[50];
+    int Book_price;
+   
+    };
+struct Order
+{ 
+   int order_id;
+   int Book_Page;
+   Book b;
 };
 int main()
 {
-   //Habibullah........
-   int choice;
-   labrary lby;
-   cout<<"\t\t\t\t<=first Labrary Details=>"<<endl;
-   cout<<"\t\t\t\t-------------------------\n\n\n";
-   cout<<"Enter Your choice to check most costly book"<<endl;
-   cout<<"1.Top 3 famous Pakistani books \n2.Top 10 famous pogramming book"<<endl;
-   cout<<"3.Top 10 famous navel Books"<<endl; 
-   cin>>choice;
-   switch(choice)
-   {
-   	case 1:
-   		cout<<"1.Book Title: Gadhay hamray bai hen\nWriter: Mustansar Hussain Tarar\nPrice: 2500"<<endl;
-   		cout<<"2.Book Title:Chota Sheher baray log\nWriter :Bano Qudsia\nPrice: 3000"<<endl;
-   		cout<<"3.Book Title: Namrood Ki Khudai\nWriter:Saadat Hassan Manto\n Price: 2000"<<endl;
-		   break;
-   }
+    Order c;
+    Book b;
+    cout<<"\t\t\t\tWell come...\n";
+    cout<<"enter number of books :";
+    int number_of_Book;
+    cin>>number_of_Book;
+    cout<<"Enter details of "<<number_of_Book<<" books: \n";
+    cout<<"Enter your Order Id: ";
+    cin>>c.order_id;
+   
+    for(int i=0;i<number_of_Book;i++)
+{
+	cout<<"\n\n\t\t\t\tEnter "<<i+1<<" Book details:";
+    cout<<"\nEnter Book Id: ";
+    cin>>c.b.Book_id;
+    cout<<"Enter Book Name: ";
+    cin>>c.b.Book_name;
+    cout<<"Enter the page of book";
+    cin>>c.Book_Page;
+    cout<< "Enter Price of the Book: ";
+    cin>>c.b.Book_price;
+ }
+    cout<<"\n Order details is as follows: "<<endl;
+    cout<<" Order Id: "<<c.order_id<<endl;
+    cout<<" Book Id\tBook Name\tB_Page\t\tPrice "<<endl;
+    
+    for(int i=0;i<number_of_Book;i++)
+{
+    cout<<c.b.Book_id<<"\t\t"<<c.b.Book_name<<"\t\t"<<c.Book_Page<<"  \t\t"<<c.b.Book_price<<endl;
+}
    
 }

@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-void shoukat (int &,int &);
+void shoukat (int &,int &);//fucntion declear
 
 int main()
 {

@@ -1,5 +1,13 @@
 #include<iostream>
+#include<windows.h>
 using namespace std;
+void loading()
+{
+	cout<<"Loading";
+	for(int a=0; a<=8; a++)
+	cout<<".";
+	Sleep(1000);
+}
 void line();
 
 int main()
@@ -36,6 +44,7 @@ int main()
 	
 	 	if(amount>15000)
 	 	{
+			loading();
 	 		cout<<"THERE IS ONLY 15000 IN YOUR ACCOUNT \n";
 	 		cout<<"PLEASE TRY AGAIN LATER ";
 		 }

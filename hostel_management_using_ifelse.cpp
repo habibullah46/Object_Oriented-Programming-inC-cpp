@@ -42,7 +42,7 @@ char x;
 	if(R==1)
 	      {
 		cout<<"Name: Habibullah\n"<<"CNIC: 71301-3516648-7\n"<<"Father Name: Abdul Khaliq\n"<<"CINC: 71301-2404784-9\n"<<"Address: Village Kunis, Tehsil Daghani ,District Ghanche, Gilgit Baltistan\n";
-		cout<<" Contact: 03408907705\n";
+		cout<<" Contact: 0340890888705\n";
 	
 	line();
 	

@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
-void line();
+void line()
+	void line()
+	{
+	
+	  cout<<"*******************************************************";
+	  };
 int main()
 {
 	int row;
@@ -71,8 +76,4 @@ int main()
 		cout<<endl;
 	}	
 }
-	void line()
-	{
 	
-	  cout<<"*******************************************************";
-	  }

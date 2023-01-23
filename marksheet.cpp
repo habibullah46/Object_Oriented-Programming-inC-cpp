@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int obtainMarks_Calculator(int, int , int, int , int );
+int obtainMarks_Calculator(int, int , int, int , int );//intigers
 int main()
 {
    

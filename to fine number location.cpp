@@ -1,22 +1,34 @@
 #include<iostream>
+#include<windows.h>
 using namespace std;
 int main()
 {
+	char p;
 	int a;
-	char op;
-	int array[]={1,4, 3, 5, 6};
-		cout<<"Please etner any number: ";
-	cin>>a; 
+	int array[]={2,3,4,1,5};
+	cout<<"Enter any number: ";
+	cin>>a;
+		cout<<"Searing";
+		for(int j=0; j<4; j++)
+		{
+			cout<<".";
+			Sleep(1000);		
+		}
+			system("cls");
 	for(int i=0; i<5; i++)
 	{
-
-	if(a==array[i])
-	{
-		cout<<"The number is found in location:"<<i+1;
-		op='t';
+	
+		
+		if(a==array[i])
+		{
+			cout<<"\nLocation of your number is: "<<i+1;
+			p='t';
+		}
 	
 	}
-}
-   if(op!='t')
-   cout<<" value is not found in array ";
+	if(p!='t')
+		{
+			cout<<"Sorry! We can't fount location of your number you enter!!";
+			
+		}
 }

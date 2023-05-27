@@ -20,7 +20,7 @@ int main()
 	cin>>row >>col;
 		line();
 	cout<<"\nenter the "<<row*col<<" elments of the first matrix\n";
-  
+  //solve
     
 	for(i=0;i<row;i++)
 	{
